@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.wis.curator</groupId>
+  <artifactId>curator-simple-config</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20191121.022717</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20191121022717</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.0.1-20191121.022717-1</value>
+        <updated>20191121022717</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
