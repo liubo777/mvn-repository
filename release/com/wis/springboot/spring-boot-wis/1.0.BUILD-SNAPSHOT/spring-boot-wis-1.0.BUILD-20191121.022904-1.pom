@@ -15,7 +15,7 @@
     <name>wis-dev-framework</name>
     <description>wis-dev-framework</description>
     <url>https://github.com/liubo777/spring-boot-wis</url>
-
+    <packaging>pom</packaging>
     <licenses>
         <license>
             <name>The Apache License, Version 2.0</name>
@@ -40,9 +40,16 @@
             <name>aliyun maven</name>
             <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
         </repository>
+        <repository>
+            <name>github maven</name>
+            <id>mvn-repository</id>
+            <url>https://raw.github.com/liubo777/mvn-repository/release</url>
+        </repository>
     </repositories>
 
-
+    <modules>
+        <module>curator-simple-config</module>
+    </modules>
 
 
     <developers>
