@@ -24,7 +24,7 @@
     </licenses>
 
     <properties>
-        <!-- Dependency Versions -->
+
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
         <encoding>UTF-8</encoding>
@@ -32,8 +32,52 @@
         <project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
         <project.resources.sourceEncoding>${encoding}</project.resources.sourceEncoding>
         <archetype.encoding>${encoding}</archetype.encoding>
-
+        <!-- Dependency Versions -->
+        <mybatis-spring-boot-starter.version>2.0.1</mybatis-spring-boot-starter.version>
+        <lombok.version>1.18.10</lombok.version>
+        <mysql-connector-java.version>8.0.17</mysql-connector-java.version>
+        <curator-framework.version>4.2.0</curator-framework.version>
+        <curator-recipes.version>4.2.0</curator-recipes.version>
+        <logback-classic.version>1.2.3</logback-classic.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis-spring-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-java.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-framework</artifactId>
+                <version>${curator-framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-recipes</artifactId>
+                <version>${curator-recipes.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback-classic.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+
     <repositories>
         <repository>
             <id>alimaven</id>
@@ -41,9 +85,14 @@
             <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
         </repository>
         <repository>
-            <name>github maven</name>
-            <id>mvn-repository</id>
+            <name>mvn-release-repository</name>
+            <id>mvn-release-repository</id>
             <url>https://raw.github.com/liubo777/mvn-repository/release</url>
+        </repository>
+        <repository>
+            <name>mvn-snapshot-repository</name>
+            <id>mvn-snapshot-repository</id>
+            <url>https://raw.github.com/liubo777/mvn-repository/snapshot</url>
         </repository>
     </repositories>
 
@@ -58,9 +107,7 @@
             <email>253620987@qq.com</email>
         </developer>
     </developers>
-    <dependencies>
 
-    </dependencies>
 
     <distributionManagement>
         <repository>
