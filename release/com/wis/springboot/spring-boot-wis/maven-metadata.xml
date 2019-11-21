@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.wis.springboot</groupId>
+  <artifactId>spring-boot-wis</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0.BUILD-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20191121021802</lastUpdated>
+  </versioning>
+</metadata>
